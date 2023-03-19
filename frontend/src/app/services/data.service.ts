@@ -16,11 +16,11 @@ export class DataService {
   }
 
   insertData(employee: Employee) {
-    return this.httpClient.post("http://localhost:80/api/addEmployee", employee);
+    return this.httpClient.post("http://localhost:80/api/employees/createEmployee", employee);
   }
 
   deleteData(id: any) {
-    return this.httpClient.delete('http://localhost:80/api/deleteEmployee/'+id);
+    return this.httpClient.delete('http://localhost:80/api/employees/deleteEmployee/'+id);
   }
 
   getDataById(id: any) {
@@ -28,6 +28,6 @@ export class DataService {
   }
 
   updateData(id: any, employee: Employee) {
-    return this.httpClient.put("http://localhost:80/api/updateEmployee/"+id, employee);
+    return this.httpClient.put("http://localhost:80/api/employees/updateEmployee/"+id, employee);
   }
 }
