@@ -14,3 +14,4 @@ This is a simple CRUD of employees. I created an API in Laravel PHP and I create
 `` alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' ``
 5. Run the following command to up all the containers services
 `` sail up -d``
+&. Adding changes
